@@ -4,7 +4,7 @@ header{
     display:flex;
     justify-content: space-between;
     align-items: center;
-    width: 750px;
+    width: 75vw;
     margin: auto auto;
 }
 
@@ -13,16 +13,18 @@ header nav a {
     padding: 10px 20px;
     color: bisque;
     border-radius: 10px;
+    border: 2px solid black;
 }
 
 main {
     background-image: url("https://picsum.photos/700/500");
-    width: 650px;
-    height:500px;
+    width: 65vw;
+    height:50vw;
     margin: auto auto;
     display: flex;
     align-items: center;
     justify-content: center;
+    background-size: cover;
 }
 
 main div {
@@ -39,7 +41,7 @@ section {
     justify-content: space-between;
     flex-wrap: wrap;
     margin: 3% auto;
-    width: 750px;
+    width: 75vw;
 }
 
 section div {
@@ -64,3 +66,36 @@ footer{
 footer button{
     padding: 10px 30px;
 }
+
+@media (max-width: 768px) {
+
+    section div {
+            width: 45%;
+        }
+    
+    section {
+            width: 90vw;
+        }
+    
+    header{
+            flex-direction: column;
+            align-items: center;
+            width: 50vw;
+            
+        }
+
+    header nav a {
+            display: block;
+            text-align: center;
+            
+    }
+
+    main {
+        margin: 30px auto;
+    }
+}
+/*
+
+
+}
+*/
